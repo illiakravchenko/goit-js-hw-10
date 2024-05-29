@@ -9,10 +9,10 @@ document.querySelector('.form').addEventListener('submit', function(event) {
 
   createPromise(delay, state)
     .then(delay => {
-      iziToast.success({
-        title: 'Success',
-        message: `✅ Fulfilled promise in ${delay}ms`
-      });
+        iziToast.success({
+            title: 'Success',
+            message: `✅ Fulfilled promise in ${delay}ms`
+        });
     })
     .catch(delay => {
       iziToast.error({
