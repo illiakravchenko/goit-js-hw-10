@@ -7,7 +7,7 @@ document.querySelector('.form').addEventListener('submit', function(event) {
   const delay = parseInt(event.target.elements.delay.value, 10);
   const state = event.target.elements.state.value;
 
-  createPromise(delay, state)
+createPromise(delay, state)
     .then(delay => {
         iziToast.success({
             title: 'Success',
